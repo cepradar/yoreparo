@@ -1,0 +1,9 @@
+mat-toolbar{
+    background-color: #114b5f;
+    color: aliceblue;
+}
+
+.spacer{
+    flex: 1 1 auto;
+}
+
