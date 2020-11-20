@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,20 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent{
 
-  constructor() { }
+  pantallas:any[]=[
+    {
+      titulo:'¿Qué necesitas?',
+      img:'assets/images/1.jpg',
+      desc:'Chatea rápidamente con profesionales de servicios para tu casa'
+    },
+    {
+      titulo:'sdmngsno',
+      img:'assets/images/2.jpg',
+      desc:'sfngsdfnpñsdnsdfnnsnidñn'
+    }
+  ];
+
+  constructor(private_config:NgbCarouselConfig) { }
 
 
 }
