@@ -8,3 +8,8 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
     background: #f3e9d2;
 }
+
+footer{
+    background: #114b5f;
+    color: white;
+}
