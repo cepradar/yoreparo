@@ -5,12 +5,9 @@
     <div class="form-group">
       <label for="controlSelectService">Servicio</label>
       <select class="form-control" id="controlSelectService">
-        <option></option>
-        <option>Reparación de lavadoras</option>
-        <option>Reparación de televisor</option>
-        <option>Reparación de computadores</option>
-        <option>Reparación de telefonos</option>
-        <option>Reparación de aire acondicionado</option>
+        <option *ngFor="let servicio of servicios" [value]="servicio.id">
+          {{servicio.nombre}}
+        </option>
       </select>
       <small id="serviceHelp" class="form-text text-muted">Seleccione un servicio.</small>
     </div>
@@ -28,12 +25,9 @@
     <div class="form-group">
       <label for="controlSelectAssistance">Tipo de Asistencia</label>
       <select class="form-control" id="controlSelectAssistance">
-        <option></option>
-        <option>Reparación de lavadoras</option>
-        <option>Reparación de televisor</option>
-        <option>Reparación de computadores</option>
-        <option>Reparación de telefonos</option>
-        <option>Reparación de aire acondicionado</option>
+        <option *ngFor="let asistencia of asistencias" [value]="asistencia.id">
+          {{asistencia.nombre}}
+        </option>
       </select>
       <small id="assistanceHelp" class="form-text text-muted">Seleccione el tipo de asistencia.</small>
     </div>

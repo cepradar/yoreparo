@@ -1,8 +1,13 @@
 import { Component} from '@angular/core';
 
 interface Servicio {
-  value: string;
-  viewValue: string;
+  id: string;
+  nombre: string;
+}
+
+interface Asistencia {
+  id: string;
+  nombre: string;
 }
 
 @Component({
@@ -13,11 +18,15 @@ interface Servicio {
 export class CotizarComponent{
 
   
- 
+  asistencias: Asistencia[] = [
+    {id: '0', nombre: ''},
+    {id: '1', nombre: 'Revisión Técnica'},
+  ];
 
   servicios: Servicio[] = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'}
+    {id: '0', nombre: ''},
+    {id: '1', nombre: 'Reparacion de lavadoras'},
+    {id: '2', nombre: 'Reparacion de Neveras'},
+    {id: '3', nombre: 'Reparacion de celulares'}
   ];
 }
