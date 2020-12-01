@@ -3,7 +3,7 @@
   <form>
 
     <div class="form-group">
-      <label for="controlSelectService">Servicio</label>
+      <label for="controlSelectService"><strong>Servicio</strong></label>
       <select class="form-control" id="controlSelectService">
         <option *ngFor="let servicio of servicios" [value]="servicio.id">
           {{servicio.nombre}}
@@ -13,17 +13,17 @@
     </div>
   
     <div class="form-group">
-      <label for="inputTitle">Titulo de la solicitud</label>
+      <label for="inputTitle"><strong> Titulo de la solicitud</strong></label>
       <input type="email" class="form-control" id="inputTitle" aria-describedby="emailHelp">
     </div>
   
     <div class="form-group">
-      <label for="controlDesciption">Descripción del servicio</label>
+      <label for="controlDesciption"><strong> Descripción del servicio</strong></label>
       <textarea class="form-control" id="controlDesciption" rows="3"></textarea>
     </div>
   
     <div class="form-group">
-      <label for="controlSelectAssistance">Tipo de Asistencia</label>
+      <label for="controlSelectAssistance"><strong> Tipo de Asistencia</strong></label>
       <select class="form-control" id="controlSelectAssistance">
         <option *ngFor="let asistencia of asistencias" [value]="asistencia.id">
           {{asistencia.nombre}}
