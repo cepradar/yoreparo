@@ -1,5 +1,5 @@
-<mat-toolbar >
-    <span> <mat-icon>build</mat-icon> <strong>YoReparo</strong></span>
+<mat-toolbar>
+    <span> <mat-icon>build</mat-icon> YoReparo</span>
 
     <div class="spacer"></div>
 
@@ -7,6 +7,8 @@
     <a class="a-button" mat-button routerLink="cotizar">Cotizar</a>
     <a class="a-button" mat-button routerLink="garantia">Garantia</a>
     <a class="a-button" mat-button routerLink="ayuda">Ayuda</a>
-    <a mat-raised-button routerLink="sesion">Iniciar Sesión</a>
+    <a *ngIf="!getSesion()" mat-raised-button routerLink="login">Iniciar Sesión</a>
+    <button class="btn btn-outline-danger" *ngIf="getSesion()" (click)="salir()">
+        Salir
+    </button>
 </mat-toolbar>
-

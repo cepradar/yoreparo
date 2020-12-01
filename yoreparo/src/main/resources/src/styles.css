@@ -6,15 +6,5 @@ html, body {
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-image: url("assets/images/fondo1.png");
-    background-size: 100%;
-}
-
-footer{
-    background: #114b5f;
-    color: white;
-}
-
-.frame{
-    
+    background: #f3e9d2;
 }
